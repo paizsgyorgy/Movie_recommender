@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel='stylesheet' href='styles.css'>
+  <title>My Movie Recommender</title>
+</head>
+
+<body>
+  <div class='container'>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="/home">Welcome to my Movie Recommender!</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" target="_blank" href="https://en.wikipedia.org/wiki/Non-negative_matrix_factorization">Methodology</a>
+          <a class="nav-item nav-link" target="_blank" href="#">Github</a>
+        </div>
+      </div>
+    </nav>
+    <div class='jumbotron'>
+      <h4>Please rate the following movies 1-5 and click submit to view your recommendation!</h4>
+      <form action='/recommendation'>
+        <div class="card-deck">
+          <div class="card">
+            <img src='https://upload.wikimedia.org/wikipedia/en/1/19/Titanic_%28Official_Film_Poster%29.png' class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Titanic</h5><br>
+              <p class="card-text">A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.
+                <a target="_blank" href='https://www.imdb.com/title/tt0120338'>(more...)</a></p><br><br>
+              <input type="text" name="Titanic (1997)" class="form-control" placeholder="Type 1-5">
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Gladiator_%282000_film_poster%29.png/220px-Gladiator_%282000_film_poster%29.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Gladiator</h5><br>
+              <p class="card-text">A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.
+                <a target="_blank" href='https://www.imdb.com/title/tt0172495'>(more...)</a></p><br><br>
+              <input type="text" name="Gladiator (2000)" class="form-control" placeholder="Type 1-5">
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">The Shawshank Redemption</h5>
+              <p class="card-text">Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.
+                <a target="_blank" href='https://www.imdb.com/title/tt0111161'>(more...)</a></p><br><br>
+              <input type="text" name="Shawshank Redemption, The (1994)" class="form-control" placeholder="Type 1-5">
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/3/3b/Pulp_Fiction_%281994%29_poster.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Pulp Fiction</h5><br>
+              <p class="card-text">The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.
+                <a target="_blank" href='https://www.imdb.com/title/tt0110912'>(more...)</a></p><br>
+              <input type="text" name="Pulp Fiction (1994)" class="form-control" placeholder="Type 1-5">
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Fight Club</h5><br>
+              <p class="card-text">An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.
+                <a target="_blank" href='https://www.imdb.com/title/tt0137523'>(more...)</a></p><br>
+              <input type="text" name="Fight Club (1999)" class="form-control" placeholder="Type 1-5">
+            </div>
+          </div>
+        </div>
+        <br>
+        <input type="submit" class="btn btn-primary">
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
