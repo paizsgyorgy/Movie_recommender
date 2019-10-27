@@ -28,7 +28,7 @@ def recommend_movies_nmf(user_dict):
     ## Create engine with SQL Alchemy's create engine function
     engine = create_engine(con, encoding='latin1', echo=False)
 
-    ##############################################################################
+    ###########################################################################
 
     ## Create dataframe with movie information and user rating from user input
     list_of_dfs = []

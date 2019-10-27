@@ -49,9 +49,9 @@ def train_nmf(ratings, comp):
 
 ##############################################################################
 
-## Run the functions to load data and train model
+## Run the functions to load data and train model with 100 hidden components
 ratings = load_data()
-model = train_nmf(ratings, 10)
+model = train_nmf(ratings, 100)
 
 ## Save the model as a pickle file for later use by recommender
 filename = 'nmf_model.sav'

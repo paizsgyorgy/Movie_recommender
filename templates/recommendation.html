@@ -21,13 +21,13 @@
         <div class="navbar-nav">
           <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="https://en.wikipedia.org/wiki/Non-negative_matrix_factorization">Methodology</a>
-          <a class="nav-item nav-link" href="#">Github</a>
+          <a class="nav-item nav-link" href="https://github.com/paizsgyorgy/Movie_recommender">Github</a>
         </div>
       </div>
     </nav>
     <div class='jumbotron'>
       <!-- Jinja Templates. Use double curly brackets-->
-      <h4>Your recommendations:</h4>
+      <h4>Your top 5 recommendations:</h4>
       <ul>
         {% for movie in movies_html %}
         <li>{{ movie }}</li>

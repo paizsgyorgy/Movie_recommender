@@ -19,4 +19,5 @@ def recommend():
 
     return render_template('recommendation.html', movies_html=movies)
 
-app.run()
+if __name__ == "__main__":
+    app.run(debug=True)

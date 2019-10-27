@@ -1,10 +1,12 @@
-"""Have a recommender engine that randomly returns 5 movies from the CSV"""
+"""Have a recommender engine that randomly returns 5 movies from a CSV"""
 
 import pandas as pd
 import random
 
+path = 'Your csv path'
+
 def recommend_movies():
-    df = pd.read_csv('/Users/paizsgyorgy/Coding/spiced-academy/Week7/Movie recommender/Data/ml-latest-small/movies.csv')
+    df = pd.read_csv(path)
     titles = df['title'].unique()
     random.shuffle(titles)
     result = list(titles[:5])

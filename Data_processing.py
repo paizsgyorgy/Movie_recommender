@@ -1,5 +1,5 @@
 """This is a module that processes the user input and appends it to
-    the Postgres database behind that stores all ratings and other info"""
+    the Postgres database that stores all ratings and other info"""
 
 import pandas as pd
 import numpy as np
