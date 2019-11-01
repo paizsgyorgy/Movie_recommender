@@ -1,6 +1,6 @@
 
 
-*.html linguist-vendored=false
+*.html linguist-vendored=true
 
 
 #
